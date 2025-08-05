@@ -1,62 +1,69 @@
-# AgeComparatoer
 
-### Задание 2
-##### Цель
+# Sorting Three Ages
 
-Научиться писать условия из нескольких выражений и объединять их булевыми операторами.
+## Goal
 
-##### Что нужно сделать
+Learn how to write conditional statements combining multiple boolean expressions.
 
-В новом проекте напишите программу, которая будет выводить заранее заданные возрасты трёх людей в порядке увеличения — от меньшего к большему.
+## Task
 
-##### реализация
+Create a program that outputs the ages of three people in ascending order — from the youngest to the oldest.
 
-1. задал три переменных возроста тре людей.
+## Implementation
+
+1. Declare three variables representing the ages of three people:
+
+```java
 ~~~
-        int vasyaAge = 10;
-        int katyaAge = 65;
-        int mishaAge = 34;
-~~~
-2. задал еще три переменных диапазона возроста
-~~~
-
-        int min = -1; // минимальный возраст
-        int middle = -1; // средний возраст
-        int max = -1; // максимальный возраст
-~~~
-3. оргонизовал проверки: минимального возроста
+int vasyaAge = 10;
+int katyaAge = 65;
+int mishaAge = 34;
 ~~~
 
-        if (vasyaAge < katyaAge && vasyaAge < mishaAge) {
-            min = vasyaAge;
-        } else if (katyaAge < vasyaAge && katyaAge < mishaAge) {
-            min = katyaAge;
-        } else {
-            min = mishaAge;
-        }
+Declare three variables to hold the minimum, middle, and maximum ages:
 ~~~
-среднего возроста
+int min = -1;    // minimum age
+int middle = -1; // middle age
+int max = -1;    // maximum age
 ~~~
-        if (vasyaAge > katyaAge && vasyaAge < mishaAge || vasyaAge > mishaAge && vasyaAge < katyaAge) {
-            middle = vasyaAge;
-        } else if (katyaAge > vasyaAge && katyaAge < mishaAge || katyaAge > mishaAge && katyaAge < vasyaAge) {
-            middle = katyaAge;
-        } else {
-            middle = mishaAge;
-        }
+Determine the minimum age:
 ~~~
-максимального возроста
-~~~
-
-        if (vasyaAge > katyaAge && vasyaAge > mishaAge) {
-            max = vasyaAge;
-        } else if (katyaAge > vasyaAge && katyaAge > mishaAge) {
-            max = katyaAge;
-            ;
-        } else {
-            max = mishaAge;
-        }
-        System.out.println("min " + min + " age \n" + "middle " + middle + " age \n" + "max " + max + " age \n");
-    }
+if (vasyaAge <= katyaAge && vasyaAge <= mishaAge) {
+    min = vasyaAge;
+} else if (katyaAge <= vasyaAge && katyaAge <= mishaAge) {
+    min = katyaAge;
+} else {
+    min = mishaAge;
 }
 ~~~
+Determine the maximum age:
+~~~
+if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
+    max = vasyaAge;
+} else if (katyaAge >= vasyaAge && katyaAge >= mishaAge) {
+    max = katyaAge;
+} else {
+    max = mishaAge;
+}
+~~~
+Determine the middle age (the one that is neither minimum nor maximum):
+~~~
+if ((vasyaAge != min) && (vasyaAge != max)) {
+    middle = vasyaAge;
+} else if ((katyaAge != min) && (katyaAge != max)) {
+    middle = katyaAge;
+} else {
+    middle = mishaAge;
+}
+~~~
+Output the results:
+~~~
+System.out.println("min " + min + " age");
+System.out.println("middle " + middle + " age");
+System.out.println("max " + max + " age");
+~~~
+Notes
+This solution works well for distinct ages.
+If some ages are equal, the logic may need adjustment.
+Using arrays and sorting is a more scalable approach but here the focus is on practicing boolean conditions.
+
