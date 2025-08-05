@@ -72,7 +72,7 @@ System.out.println("max " + max + " age");
 ```
 
 Notes
--This solution works well for distinct ages.
--If some ages are equal, the logic may need adjustment.
--Using arrays and sorting is a more scalable approach but here the focus is on practicing boolean conditions.
+- This solution works well for distinct ages.
+- If some ages are equal, the logic may need adjustment.
+- Using arrays and sorting is a more scalable approach but here the focus is on practicing boolean conditions.
 
