@@ -13,23 +13,19 @@ Create a program that outputs the ages of three people in ascending order — fr
 
 1. Declare three variables representing the ages of three people:
 
-```java
-~~~
-
+~~~java
 int vasyaAge = 10;
 int katyaAge = 65;
 int mishaAge = 34;
-
 ~~~
-
 Declare three variables to hold the minimum, middle, and maximum ages:
-~~~
+~~~java
 int min = -1;    // minimum age
 int middle = -1; // middle age
 int max = -1;    // maximum age
 ~~~
 Determine the minimum age:
-~~~
+~~~java
 if (vasyaAge <= katyaAge && vasyaAge <= mishaAge) {
     min = vasyaAge;
 } else if (katyaAge <= vasyaAge && katyaAge <= mishaAge) {
@@ -39,7 +35,7 @@ if (vasyaAge <= katyaAge && vasyaAge <= mishaAge) {
 }
 ~~~
 Determine the maximum age:
-~~~
+~~~java
 if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
     max = vasyaAge;
 } else if (katyaAge >= vasyaAge && katyaAge >= mishaAge) {
@@ -49,7 +45,7 @@ if (vasyaAge >= katyaAge && vasyaAge >= mishaAge) {
 }
 ~~~
 Determine the middle age (the one that is neither minimum nor maximum):
-~~~
+~~~java
 if ((vasyaAge != min) && (vasyaAge != max)) {
     middle = vasyaAge;
 } else if ((katyaAge != min) && (katyaAge != max)) {
@@ -59,7 +55,7 @@ if ((vasyaAge != min) && (vasyaAge != max)) {
 }
 ~~~
 Output the results:
-~~~
+~~~java
 System.out.println("min " + min + " age");
 System.out.println("middle " + middle + " age");
 System.out.println("max " + max + " age");
