@@ -15,9 +15,11 @@ Create a program that outputs the ages of three people in ascending order — fr
 
 ```java
 ~~~
+
 int vasyaAge = 10;
 int katyaAge = 65;
 int mishaAge = 34;
+
 ~~~
 
 Declare three variables to hold the minimum, middle, and maximum ages:
