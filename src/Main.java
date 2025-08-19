@@ -4,9 +4,9 @@ public class Main {
         int katyaAge = 65;
         int mishaAge = 34;
 
-        int min = -1; // минимальный возраст
-        int middle = -1; // средний возраст
-        int max = -1; // максимальный возраст
+        int min = -1;    // minimum age
+        int middle = -1; // middle age
+        int max = -1;    // maximum age
 
         if (vasyaAge < katyaAge && vasyaAge < mishaAge) {
             min = vasyaAge;
