@@ -7,7 +7,7 @@ Learn how to write conditional statements combining multiple boolean expressions
 
 ## Task  
 
-Create a program that outputs the ages of three people in ascending order — from the youngest to the oldest.  
+Create a program that outputs the ages of three people in ascending order — from the youngest to the  oldest.  
 
 ## Implementation  
 
@@ -74,7 +74,7 @@ System.out.println("max " + max + " age");
 Notes:  
 - This solution works well for distinct ages.  
 - If some ages are equal, the logic may need adjustment.  
-- Using arrays and sorting is a more scalable approach but here the focus is on practicing boolean conditions.  
+- Using arrays and sorting is a more scalable approach but here the focus is on practicing boolean  conditions.  
 ---
 The repository exists purely as a learning and demonstration artifact.  
 
